@@ -1,6 +1,6 @@
 # Git 文档
 
-## Git 入门指南
+## Git 使用指南
 
 >Git 是一款主流的分布式**版本控制系统** (VCS, Version Control System)，主要用于管理和记录对于文件的修改。本指南旨在为快速入门使用 Git Bash 进行文件的版本控制提供帮助。 
 
