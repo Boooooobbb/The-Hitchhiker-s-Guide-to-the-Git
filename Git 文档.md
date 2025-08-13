@@ -285,6 +285,8 @@
 	```
 	
 	![[images/Git 使用指南-Git 远程仓库-添加远程仓库.png]]
+	
+- 注：连接**Github 远程仓库**时推荐通过以下命令将本地主分支名改为`main`，以此保证本地和远程主分支名的一致性
 
 #### 推送本地分支到远程仓库（push）
 
@@ -294,10 +296,10 @@
 	```
 - `push`命令的完全体：
 	```bash
-	git push -f --set-upstream <name-of-remote> <name-of-local-branch>:<name-of-remote-branch>
+	git push -f -u <name-of-remote> <name-of-local-branch>:<name-of-remote-branch>
 	```
 	- `-f`：当本地推送的修改内容和远程仓库的修改冲突时，强制用本地推送的修改内容覆盖远程仓库
-	- `--set-upstream`：将本地分支与远程分支关联
+	- `-u`：将本地分支与远程分支关联
 		- ⭐⭐⭐关联之后，使用`git push`即可将本地分支的修改推送到关联的远程分支中
 	- `<name-of-remote>`：远程仓库名
 	- `<name-of-local-branch>`：本地分支名
@@ -306,6 +308,7 @@
 	```bash
 	git branch -vv
 	```
+- ❗❗❗注：每次`push`之前必须先进行`pull`，从而保证本地分支的内容始终与远程分支保持一致
 
 #### 从远程仓库克隆（clone）
 
