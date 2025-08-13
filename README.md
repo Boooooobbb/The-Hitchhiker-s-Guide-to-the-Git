@@ -48,8 +48,7 @@
 
 1. 进入需要作为本地 Git 仓库的目录  
 2. 在右键菜单中点击 “Open Git Bash here”  
-	
-	![Git%20使用指南-创建仓库-创建本地仓库-1](images/Git%20使用指南-创建仓库-创建本地仓库-1.png|200)
+	![Git%20使用指南-创建仓库-创建本地仓库-1](images/Git%20使用指南-创建仓库-创建本地仓库-1.png)
 	
 3. 在 Git Bash 中输入以下命令**创建本地仓库**`init` = **Init**ialization
     ```bash
@@ -57,16 +56,14 @@
     ```
 4. 如果创建成功，当前目录下会有一个名为 `.git` 的隐藏文件夹  （ps. 如果不知道在 Windows 下如何查看隐藏文件夹，不妨自行探索一下 :P）
 	
-	![[images/Git 使用指南-创建仓库-创建本地仓库-2.png]]
-	
-
+	![Git 使用指南-创建仓库-创建本地仓库-2](images/Git%20使用指南-创建仓库-创建本地仓库-2.png)
 ---
 
 ### Git 基本操作
 
 #### 文件的三种状态
 
-![[images/Git 使用指南-Git 基本操作-文件的三种状态.png]]
+![Git 使用指南-Git 基本操作-文件的三种状态](images/Git%20使用指南-Git%20基本操作-文件的三种状态.png)
 - **未跟踪** or **未暂存**——文件位于工作目录下（还记得在执行 `git init`后，有一个隐藏的`.git`文件的目录吗，这就是工作目录 :D）
     - **未跟踪**：文件未被纳入版本控制
     - **未暂存**：文件被修改后，新的修改未提交到暂存区
@@ -96,15 +93,15 @@
 	````
 - 文件未跟踪（新文件未提交到暂存区）：
 	
-	![[images/Git 使用指南-Git 基本操作-状态的查看（status）-1.png|500]]
+	![状态的查看（status）-1](images/Git%20使用指南-Git%20基本操作-状态的查看（status）-1.png)
 	
 - 文件未暂存（文件修改后未提交到暂存区）：
 	
-	![[images/Git 使用指南-Git 基本操作-状态的查看（status）-2.png|500]]
+	![状态的查看（status）-2](images/Git%20使用指南-Git%20基本操作-状态的查看（status）-2.png)
 	
 - 文件未提交（暂存区文件未提交到**本地仓库**）：
 	
-	![[images/Git 使用指南-Git 基本操作-状态的查看（status）-3.png|500]]
+	![状态的查看（status）-3](images/Git%20使用指南-Git%20基本操作-状态的查看（status）-3.png)
 	
 
 #### 查看提交日志（log）
@@ -115,7 +112,7 @@
 	```
 - 命令行中会显示每次`commit`的<u>身份证commitID</u>（一个唯一的标识符）以及<u>是谁干的</u>（[怎么判断是谁——配置的name](#^quote-of-name)）、<u>什么时候干的</u>、<u>留下的附加信息是什么</u>（[忘记什么是附加信息了？](#^quote-of-commit-message)）
 	
-	![[images/Git 使用指南-Git 基本操作-查看提交日志（log）.png]]
+	![Git 使用指南-Git 基本操作-查看提交日志（log）](images/Git%20使用指南-Git%20基本操作-查看提交日志（log）.png)
 	
 - 一些`log`命令的选项（(((φ(◎ロ◎;)φ)))晕头转向？下有终极解决方案）
 	1. `--all`：显示所有分支
@@ -185,7 +182,7 @@
 		git branch
 		```
 		
-		![[images/Git 使用指南-Git 分支-查看、创建本地分支（branch）.png|400]]
+		![Git 使用指南-Git 分支-查看、创建本地分支（branch）](images/Git%20使用指南-Git%20分支-查看、创建本地分支（branch）.png)
 
 #### 切换分支（checkout）
 
@@ -196,14 +193,14 @@
 - 示例：
 	1. 切换分支前：
 		
-		![[images/Git 使用指南-Git 分支-切换分支（checkout）-1.png|400]]
+		![Git 使用指南-Git 分支-切换分支（checkout）-1](images/Git%20使用指南-Git%20分支-切换分支（checkout）-1.png)
 		
 	2. 切换至`dev`分支：
 		```bash
 		git checkout dev
 		```
 		
-		![[images/Git 使用指南-Git 分支-切换分支（checkout）-2.png|400]]
+		![Git 使用指南-Git 分支-切换分支（checkout）-2](images/Git%20使用指南-Git%20分支-切换分支（checkout）-2.png)
 		
 - ⭐⭐⭐实用用法：创建分支并切换到该分支 
 	```bash
@@ -214,14 +211,14 @@
 		git checkout -b feature/01
 		```
 		
-		![[images/Git 使用指南-Git 分支-切换分支（checkout）-3.png|450]]
+		![Git 使用指南-Git 分支-切换分支（checkout）-3](images/Git%20使用指南-Git%20分支-切换分支（checkout）-3.png)
 
 #### 合并分支（merge）
 
 - 把一个分支里的成功合并到主分支（`master`）或其他分支
 - 合并分支的步骤
 	1. 利用`git checkout`切换到目标分支（一般为主分支`master`）
-		![[images/Git 使用指南-Git 分支-合并分支（merge）-1.png|500]]
+		![Git 使用指南-Git 分支-合并分支（merge）-1](images/Git%20使用指南-Git%20分支-合并分支（merge）-1.png)
 	2. 利用`merge`命令将其他分支合并到当前所在分支（`merge`命令会默认把命令中指定的分支`<branch-to-merge>`合并到当前所在分支）
 		```bash
 		git merge <branch-to-merge>
@@ -237,11 +234,11 @@
 - 解决合并过程中分支间的冲突（两个分支都针对同一数据进行了修改，且修改的结果不同）的一般步骤 ^quote-of-conflict
 	1. 合并出现冲突时的提示
 		
-		![[images/Git 使用指南-Git 分支-合并分支（merge）-2.png|500]]
+		![Git 使用指南-Git 分支-合并分支（merge）-2](images/Git%20使用指南-Git%20分支-合并分支（merge）-2.png)
 		
 	2. Git 会自动保留冲突的部分，需要你手动处理出现冲突的地方（在冲突的部分所在的文件中，删掉不需要的，按需求修改内容）
 		
-		![[images/Git 使用指南-Git 分支-合并分支（merge）-3.png|500]]
+		![Git 使用指南-Git 分支-合并分支（merge）-3](images/Git%20使用指南-Git%20分支-合并分支（merge）-3.png)
 		
 	3. 再重新`add`、`commit`一下有冲突的文件
 
@@ -260,17 +257,17 @@
 	cat ~/.ssh/id_rsa.pub
 	```
 3. 将公钥（图中黄色方框中的部分）复制（[在 Git Bash 中如何进行复制?](Linux%20文档#^quote-of-copy)）到远程仓库平台的SSH设置中
-	![[images/Git 使用指南-Git 远程仓库-配置公钥连接远程仓库-1.png|500]]
+	![Git 使用指南-Git 远程仓库-配置公钥连接远程仓库-1](images/Git%20使用指南-Git%20远程仓库-配置公钥连接远程仓库-1.png)
 	Github 中的 SSH 设置：
-	![[Git 使用指南-Git 远程仓库-配置公钥连接远程仓库-2.png|550]]
+	![Git 使用指南-Git 远程仓库-配置公钥连接远程仓库-2](images/Git%20使用指南-Git%20远程仓库-配置公钥连接远程仓库-2.png)
 	Gitee 中的 SSH 设置：
-	![[Git 使用指南-Git 远程仓库-配置公钥连接远程仓库-3.png|550]]
+	![Git 使用指南-Git 远程仓库-配置公钥连接远程仓库-3](images/Git%20使用指南-Git%20远程仓库-配置公钥连接远程仓库-3.png)
 4. 输入以下命令验证是否配置成功(如果是 Gitee，则换成`git@gitee.com`)
 	```bash
 	ssh -T git@github.com
 	```
 5. 显示以下内容即为配置成功
-	![[images/Git 使用指南-Git 远程仓库-配置公钥连接远程仓库-4.png|500]]
+	![Git 使用指南-Git 远程仓库-配置公钥连接远程仓库-4](images/Git%20使用指南-Git%20远程仓库-配置公钥连接远程仓库-4.png)
 #### 添加远程仓库
 
 1. 进入需要连接远程仓库的本地仓库
@@ -284,7 +281,7 @@
 	git remote
 	```
 	
-	![[images/Git 使用指南-Git 远程仓库-添加远程仓库.png]]
+	![Git 使用指南-Git 远程仓库-添加远程仓库](images/Git%20使用指南-Git%20远程仓库-添加远程仓库.png)
 
 #### 推送本地分支到远程仓库（push）
 
@@ -311,7 +308,7 @@
 
 1. 在 Github 或 Gitee 上找到需要克隆的仓库的 URL 
 	
-	![[images/Git 使用指南-Git 远程仓库-从远程仓库克隆（clone）-1.png]]
+	![Git 使用指南-Git 远程仓库-从远程仓库克隆（clone）-1](images/Git%20使用指南-Git%20远程仓库-从远程仓库克隆（clone）-1.png)
 	
 2. 在 Git Bash 中进入需要存放克隆仓库的目录  
 3.  输入以下命令**克隆远程仓库**  （请将 `<URL>` 部分换成需要克隆的仓库的 URL；Github 克隆太慢时，可以将`<URL>`中`https://github.com`部分替换为`https://gitclone.com/github.com`
@@ -320,7 +317,7 @@
     ```
 4. 克隆成功后可在目录下看到克隆到本地的仓库
 	
-	![[images/Git 使用指南-Git 远程仓库-从远程仓库克隆（clone）-2.png|350]]
+	![Git 使用指南-Git 远程仓库-从远程仓库克隆（clone）-2](images/Git%20使用指南-Git%20远程仓库-从远程仓库克隆（clone）-2.png)
 
 #### 从远程仓库抓取（fetch）和拉取（pull）
 
