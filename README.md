@@ -293,14 +293,14 @@
 	```
 	例：`git remote add origin git@github.com:Boooooobbb/The-Hitchhiker-s-Guide-to-the-Git.git`
 	
-	![Git 使用指南-Git 远程仓库-添加远程仓库](Git%20使用指南-Git%20远程仓库-添加远程仓库-1.png)
+	![Git 使用指南-Git 远程仓库-添加远程仓库](images/Git%20使用指南-Git%20远程仓库-添加远程仓库-1.png)
 	
 3. 可以通过以下命令查看远程仓库
 	```bash
 	git remote
 	```
 	
-	![Git 使用指南-Git 远程仓库-添加远程仓库](Git%20使用指南-Git%20远程仓库-添加远程仓库-2.png)
+	![Git 使用指南-Git 远程仓库-添加远程仓库](images/Git%20使用指南-Git%20远程仓库-添加远程仓库-2.png)
 	
 - 注：连接**Github 远程仓库**时推荐通过以下命令将本地主分支名改为`main`，以此保证本地和远程主分支名的一致性
 	```bash
